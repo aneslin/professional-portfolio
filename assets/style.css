@@ -35,3 +35,25 @@ header nav ul {
 header nav ul li {
     padding: 0 10px;
 }
+
+.flex-row {
+    display: flex;
+    align-items: center;
+    padding: 2px .5% 0 .5%;
+    justify-content: space-evenly;
+}
+
+
+
+.text-align-right {
+    text-align: right;
+}
+
+.personal {
+    margin-left: 3px;
+    padding: 3%;
+}
+.personal  h2{
+    text-align: left;
+
+}

@@ -36,7 +36,7 @@ header nav ul li {
     padding: 0 10px;
 }
 
-.flex-row {
+.projects {
     display: flex;
     align-items: center;
     padding: 2px .5% 0 .5%;
@@ -56,4 +56,10 @@ header nav ul li {
 .personal  h2{
     text-align: left;
 
+}
+
+
+
+.project:first-child {
+    flex:2 2 auto;
 }

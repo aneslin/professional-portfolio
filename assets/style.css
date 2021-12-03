@@ -1,19 +1,28 @@
+ :root{
+    --primary:  #557a95;
+    --secondary: #b1a296;
+    --textColor: rgb(229, 230, 235); ;
+
+}
 * {margin: 0;
     padding: 0;
     box-sizing: border-box;}
 body{
     font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--primary);
 }   
 
 header {
-    display: flex;
+    position: sticky;
+    top: 0;
+        display: flex;
+    flex: 2 0 auto;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     background-image: url("../assets/images/paul-frenzel-MnHQMzC6n-o-unsplash.jpg");
     background-position: bottom;
     background-size:cover;
-    padding: 1%;
     padding-bottom: 2px;
     margin-bottom: 3px;
 
@@ -25,19 +34,25 @@ header a {
 
 }
 
-header nav ul {
+.listBar {
     display: flex;
     justify-content: space-between;
     list-style: none;
     flex-wrap: wrap;
+    font-size: larger;
+    height: 50%;
+    border: red solid 4px
 
 }
 
 header nav ul li {
     padding: 0 10px;
+    
 }
 
-
+#about-me {
+    border: red solid 4px;
+}
 
 .text-align-right {
     text-align: right;
@@ -45,12 +60,17 @@ header nav ul li {
 
 .flex-row { 
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
     margin: 5px auto;
-    padding-left: 1%;
+    margin-left: 1%;
+    
 }
-
+.flex-row p {
+    width: 50%;
+    margin-left: 2%;
+}
 .row{
     flex-direction: row;
 }
@@ -59,33 +79,37 @@ header nav ul li {
     flex-direction: column;
 }
 
-.flex-row img {
-    margin: 5px;
+
+.flex-left{
+    justify-content: left;
 }
 
 
-.personal {
-    margin-left: 3px;
-
-}
 .personal  h2{
     text-align: left;
 
 }
 .projects {
-    /*display: flex;*/
+    display: flex;
     margin:5px auto;
-    padding-left: 5px;
+    
     flex-wrap: wrap;
-    background-color: red;
+    border:  red solid 2px;
     justify-content: center;
 }
 
 
 .project {
-    background-color: azure;
+    background-color: var(--bgColor);
     justify-content: center;
     align-items: center;
+    border: blue solid 5px;
+    
+}
+
+.project p {
+    text-align: left;
+    color: var(--textColor)
     
 }
 
@@ -96,10 +120,36 @@ header nav ul li {
 
 .secondary-image{
     object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
 
-.projects:first-child{
-    flex: 2 auto;
-  
+.contacts {
+    display:flex;
+    border: green solid 5px;
+    background-color: #b1a296;
+    justify-content: flex-start;
+
 }
 
+.contacts ul {
+    margin-left: 5%;
+    justify-content: space-between;
+    width: 75%;
+    border: purple solid 5px;
+    align-content: center;
+
+}
+
+.contacts ul li {
+    
+    font-size: larger;
+    text-decoration: none;
+    color: var(--textColor);
+}
+.contacts a {
+    text-decoration: none;
+    color:var(--textColor)
+}

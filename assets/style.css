@@ -55,6 +55,11 @@ header nav ul li {
     
 }
 
+
+h1 {
+    color: var(--primary)
+}
+
 .bottomLine{
     border-bottom: #b1a296 solid 4px;
     padding: 5px;
@@ -73,7 +78,11 @@ header nav ul li {
     margin:  auto;
     width:100%;
 }   
-   
+ 
+.aboutMe p{
+    width:30%
+}
+
 .textDisplay{
 display: flex;
 }    
@@ -112,6 +121,7 @@ display: flex;
     flex-wrap: wrap;
     margin:5px auto;
     justify-content: center;
+    align-items: center;
 }
 
 
@@ -130,6 +140,8 @@ display: flex;
     overflow:hidden;
     margin: 0;
 }
+
+
 
 .prime-image{
     width: 100%;
@@ -185,6 +197,16 @@ display: flex;
     color:var(--textColor)
 }
 
+footer .flex-row {
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+footer .flex-row p {
+    width: 100%;
+    font-size: smaller;
+}
+
 .project img:hover {
     filter: brightness(60%);
 }
@@ -195,10 +217,12 @@ display: flex;
 
 @media screen and (max-width: 780px){
     .project{
-        width: 100%;
+        width: 92%;
+        
     }
         .prime{
             height: 400px;
+            align-items: center;
         }
         .prime img{
             height: 95%;

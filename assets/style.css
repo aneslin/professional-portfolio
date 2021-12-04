@@ -1,7 +1,8 @@
  :root{
     --primary:  #557a95;
     --secondary: #b1a296;
-    --textColor: rgb(229, 230, 235); ;
+    --textColor: rgb(229, 230, 235); 
+    --imageOne:  url("https://placekitten.com/600/200")
 
 }
 * {margin: 0;
@@ -28,6 +29,9 @@ header {
 
 }
 
+h2 {
+    padding: 0 .5% 0 .5%;
+}
 header a {
     color: rgb(229, 230, 235);
     text-decoration: none;
@@ -63,13 +67,17 @@ header nav ul li {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    margin: 5px auto;
-    margin-left: 1%;
+    margin:  auto;
+    border: yellow solid 5px;
+    width:100%;
+   
+    
     
 }
 .flex-row p {
     width: 50%;
     margin-left: 2%;
+    text-align: left;
 }
 .row{
     flex-direction: row;
@@ -90,10 +98,9 @@ header nav ul li {
 
 }
 .projects {
+    
     display: flex;
     margin:5px auto;
-    
-    flex-wrap: wrap;
     border:  red solid 2px;
     justify-content: center;
 }
@@ -101,22 +108,25 @@ header nav ul li {
 
 .project {
     background-color: var(--bgColor);
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     border: blue solid 5px;
+    height: 300px;
+    width: 50%
     
 }
-
-.project p {
-    text-align: left;
-    color: var(--textColor)
-    
-}
-
-.img-size{
-    height: 500px;
+.prime{
     width: 100%;
 }
+
+.prime-image{
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+}
+
+
 
 .secondary-image{
     object-fit: cover;
@@ -124,6 +134,7 @@ header nav ul li {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    height: 300px;
 }
 
 .contacts {
@@ -152,4 +163,13 @@ header nav ul li {
 .contacts a {
     text-decoration: none;
     color:var(--textColor)
+}
+
+@media screen and (max-width: 780px){
+    .flex-row{
+        flex-wrap: wrap;
+        
+    }
+
+  
 }

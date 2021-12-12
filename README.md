@@ -16,10 +16,10 @@ A portfolio for Aaron Neslin.  Includes links to 5 Github repoistories or github
 * The page is responsive with media queries to adjust to a single column when the viewport is narrow
 * The first project will always be the largest
 
-![Image of Portoflio Website]("./assets/images/portfolio2.JPG")
+![Image of Portoflio Website](./assets/images/portflio2.JPG  "Portfolio screen shot")
 
 
-##Link to Deployed Website 
+## Link to Deployed Website 
 
 [Deployed Portfolio Website]( https://aneslin.github.io/professional-portfolio/)
 
